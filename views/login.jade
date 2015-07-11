@@ -1,0 +1,14 @@
+h1 #{title}
+p Enter your id & pw
+p #{message}
+p #{error_message}
+br
+form( method='POST', action='/check')
+  id
+  input( type='text', name='id')
+  br
+  password
+  input( type='password', name='pw')
+  br
+  input( type='submit', name='enter', value='login')
+  br

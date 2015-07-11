@@ -1,0 +1,8 @@
+extends layout
+
+block content
+  h1= title
+  p Welcome to #{title}
+  br
+  form( method='GET', action='/logout')
+    input( type='submit', name='enter', value='logout')
